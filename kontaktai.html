@@ -1,0 +1,89 @@
+<html>
+
+    <head>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        
+        
+    </head>
+    
+    <body>
+    
+        <div id="container">
+            
+            <div id="header">
+               <img src="img/logo.png" style="height:100px;width:auto;">
+                <h1>Z-Animation</h1>
+                <h2>Animacijos ir iliustracij&#371; studija</h2>
+            </div>
+            
+            
+             <ul>
+                <li><a href="index.html">Pagrindinis</a></li>
+                <li><a href="darbai.html">Darbai</a></li>
+                <li><a href="projektai.html">Projektai</a></li>
+                <li><a href="kontaktai.html">Kontaktai</a></li>
+            </ul> 
+            
+            
+           
+                
+                <div id="main">
+                
+                    <div id="pattern"></div>
+                        <form enctype="text/plain">
+                            <h3>Susisiekite su mumis</h3>
+                            <p>Vardas:</p>
+                                <input type="text" name="name" id="vardas" onfocus="this.style.backgroundColor='rgb(205, 242, 219)'" onblur="this.style.backgroundColor='rgb(135, 255, 180)'">
+                            <p>Elektroninis pa&#353;tas:</p>
+                                <input type="text" name="mail" id="pastas"onfocus="this.style.backgroundColor='rgb(205, 242, 219)'" onblur="this.style.backgroundColor='rgb(135, 255, 180)'">
+                           <br> <p>&#381;inut&#279;:</p>
+                                <textarea rows="2" cols="50" id="komentaras" name="com" onkeypress="this.rows=10"></textarea><br><br>
+                                <input type="submit" value="Si&#371;sti" onclick="return check();">
+                                <input type="reset" value="I&#353;trinti">
+                        </form>
+                  
+                    <div id="pattern"></div>
+            </div>
+                    
+             <div id="footer">
+                <div id="fr">
+                    <p>Pana&#353;&#363;s puslapiai:</p>
+                
+                    <a href="http://www.moondoganimation.com/"><p>Moondog animation</p></a>
+                    <a href="https://www.tumblehead.com/"><p>Thumblegead</p></a>
+                    <a href="http://www.laika.com/"><p>Laika</p></a>
+               
+                
+                
+                </div>
+                
+                <div id="fl">
+                    <p>&#169; Z-Animation studija<br>2017</p>
+                </div>
+                
+            </div>
+            
+    </body>
+
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <script type="text/javascript">
+            	function check(){
+	var inputs=document.getElementsByTagName("input");
+    var text=document.getElementById("komentaras");
+	for(var i=0;i<inputs.length;i++){
+		if (!inputs[i].value || !text.value){alert("Uzpildykite visus laukus");
+			return false;}
+	}
+                }
+        </script>
+
+</html>

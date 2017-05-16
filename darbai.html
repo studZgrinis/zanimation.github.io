@@ -1,0 +1,167 @@
+<html>
+
+    <head>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        
+        
+    </head>
+    
+    <body>
+    
+        <div id="container">
+            
+            <div id="header">
+               <img src="img/logo.png" style="height:100px;width:auto;">
+                <h1>Z-Animation</h1>
+                <h2>Animacijos ir iliustracij&#371; studija</h2>
+            </div>
+            
+            
+             <ul>
+                <li><a href="index.html">Pagrindinis</a></li>
+                <li><a href="darbai.html">Darbai</a></li>
+                <li><a href="projektai.html">Projektai</a></li>
+                <li><a href="kontaktai.html">Kontaktai</a></li>
+            </ul> 
+            
+            
+           
+                
+                <div id="main">
+                
+                    <div id="pattern"></div>
+                
+                    <h1>Studijos darb&#371; pavyzd&#382;iai</h1>
+                    <div id="lightbox">
+                        
+                         <div class="row">
+  <div class="column">
+    <img src="darbai/img1.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow">
+  </div>
+  <div class="column">
+    <img src="darbai/img2.jpg" onclick="openModal();currentSlide(2)" class="hover-shadow">
+  </div>
+  <div class="column">
+    <img src="darbai/img3.jpg" onclick="openModal();currentSlide(3)" class="hover-shadow">
+  </div>
+
+<div id="myModal" class="modal" >
+    
+  <span class="close cursor" onclick="closeModal()">&times;</span>
+  <div class="modal-content">
+
+    <div class="mySlides">
+      <div class="numbertext">1 / 3</div>
+        <img src="darbai/pykuolis.png" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">2 / 3</div>
+        <img src="darbai/the-three-muslims.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">3 / 3</div>
+        <img src="darbai/wolf.png" style="width:100%">
+    </div>
+
+
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    <div class="caption-container">
+      <p id="caption"></p>
+    </div>
+
+    <div class="column">
+      <img class="demo" src="darbai/img1.jpg" onclick="currentSlide(1)" >
+    </div>
+
+    <div class="column">
+      <img class="demo" src="darbai/img2.jpg" onclick="currentSlide(2)" >
+    </div>
+
+    <div class="column">
+      <img class="demo" src="darbai/img3.jpg" onclick="currentSlide(3)" >
+    </div>
+
+  </div>
+</div>
+                        
+                    </div>
+                        
+                    </div>
+                    
+                    <div id="pattern"></div>
+            </div>
+                    
+              <div id="footer">
+                <div id="fr">
+                    <p>Pana&#353;&#363;s puslapiai:</p>
+                
+                    <a href="http://www.moondoganimation.com/"><p>Moondog animation</p></a>
+                    <a href="https://www.tumblehead.com/"><p>Thumblegead</p></a>
+                    <a href="http://www.laika.com/"><p>Laika</p></a>
+               
+                
+                
+                </div>
+                
+                <div id="fl">
+                    <p>&#169; Z-Animation studija<br>2017</p>
+                </div>
+                
+            </div>  
+            
+    </body>
+
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <script>
+function openModal() {
+  document.getElementById('myModal').style.display = "block";
+}
+
+function closeModal() {
+  document.getElementById('myModal').style.display = "none";
+}
+
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+
+</html>
