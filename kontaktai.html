@@ -40,7 +40,7 @@
                             <p>Vardas:</p>
                                 <input type="text" name="name" id="vardas" onfocus="this.style.backgroundColor='rgb(205, 242, 219)'" onblur="this.style.backgroundColor='rgb(135, 255, 180)'">
                             <p>Elektroninis pa&#353;tas:</p>
-                                <input type="text" name="mail" id="pastas"onfocus="this.style.backgroundColor='rgb(205, 242, 219)'" onblur="this.style.backgroundColor='rgb(135, 255, 180)'">
+                                <input type="text" name="mail" id="pastas"onfocus="this.style.backgroundColor='rgb(205, 242, 219)'" onblur="ValidateEmail();" >
                            <br> <p>&#381;inut&#279;:</p>
                                 <textarea rows="2" cols="50" id="komentaras" name="com" onkeypress="this.rows=10"></textarea><br><br>
                                 <input type="submit" value="Si&#371;sti" onclick="return check();">
@@ -89,6 +89,26 @@
 			return false;}
 	}
                 }
+            
+            
+function ValidateEmail()  
+{  
+var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\lt)$/;  
+if(document.getElementById("pastas").value.match(mailformat))  
+{ 
+document.getElementById("pastas").style.backgroundColor='rgb(135, 255, 180)';
+return true;  
+}  
+else  
+{  
+    document.getElementById("pastas").style.backgroundColor='rgb(200, 100, 100)';
+alert("Ivedete netaisyklinga elektroninio pasto adresa!");   
+return false;  
+}  
+}
+            
         </script>
+        
+        
 
 </html>
