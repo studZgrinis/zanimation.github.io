@@ -44,6 +44,11 @@ body{
     padding-right: 30;
 }
 
+#wat {
+    height: 300px;
+    width: 300px;
+}
+
 #footer{
     height: 15%;
     background-color: rgb(111, 123, 142);
@@ -328,4 +333,205 @@ img.hover-shadow {
     0% {background-color:rgb(0,0,0,0);}
     25% {background-color: dimgray;}
     100%{background-color:rgb(0,0,0,0);}
+}
+
+
+/*responsive tablet*/
+
+@media only screen and (max-width: 768px) {
+    #header{
+        height: 20%;
+       
+    }
+    
+    #header img{
+        float: left;
+        margin-left: 5%;
+    }
+    
+    #header h2{
+        background-color:rgba(22, 22, 22, 0.5);
+        
+    }
+    
+    #main h1{
+        font-size: 25px;
+    }
+    #main h3{
+        font-size: 18px;
+    }
+    
+    #wat{
+        height: 200px;
+        width: 200px;
+    }
+    
+    .column img{
+        height: 100px;
+        width: auto;
+    }
+    
+    #item img{
+        width: 100%;
+        height: auto;
+      
+    }
+    #item{
+        margin: 10px;
+        margin-bottom: 100px;
+    }
+    
+    #right{
+        margin-left: 5px;
+    }
+    
+    ul{
+        height: 15px;
+    }
+    
+    li a{
+        font-size: 20px;
+    }
+    
+    li {
+    
+   
+    padding:17px;
+    padding-top: 25px;
+    padding-bottom: 12px;
+  
+}
+}
+
+/*responsive*/
+
+@media only screen and (max-width: 670px) {
+
+    #header h2{
+        font-size: 20px;
+    }
+  
+    
+        
+    
+    .column{
+        margin-left: 20%;
+        width: auto;
+    }
+    .row{
+        width: 70%;
+        margin: auto;
+    }
+   
+}
+
+@media only screen and (max-width: 540px) {
+
+    #header h1{
+      font-size: 30px;
+    }
+    #header img{
+        display: none;
+    }
+    
+       ul{
+        height: 10px;
+    }
+    
+    li a{
+        font-size: 15px;
+    }
+    
+    li {
+    
+   
+    padding:17px;
+    padding-top: 20px;
+    padding-bottom: 12px;
+  
+}
+    
+    #main h1{
+        font-size: 18px;
+    }
+    #main h3{
+        font-size: 12px;
+    }   
+    
+    #right{
+        width: 100%;
+    }
+    
+    #komentaras{
+        width: 300px;
+    }
+    
+}
+
+@media only screen and (max-width: 450px) {
+      ul{
+        height: 5px;
+    }
+    
+    li a{
+        font-size: 10px;
+    }
+    
+    li {
+    
+   
+    padding:10px;
+    padding-top: 20px;
+    padding-bottom: 8px;
+      
+}
+     #footer{
+            font-size: 10px;
+        } 
+    #pattern{
+        height: 20px;
+    }
+    
+    #main h1{
+        font-size: 13px;
+    }
+    
+    #main h3{
+        font-size: 10px;
+    }
+    
+    #wat{
+        height: 100px;
+        width: auto;
+    }
+    #main{
+        margin-bottom: 15px;
+    }
+    
+    .column{
+        margin: 0;
+        margin-left: 10%;
+    }
+    
+    .column img{
+        height: 70px;
+        width: auto;
+        margin: 10px;
+    }
+    
+    .myslides{
+        margin-top: 20px;
+    }
+    
+    #item p{
+        font-size: 8px;
+    }
+    
+    #item{
+        margin-bottom: 30px;
+    }
+    
+    #komentaras{
+        width: 200px;
+    }
 }
